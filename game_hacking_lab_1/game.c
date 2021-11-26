@@ -52,13 +52,14 @@ void print_hp(Player *player) {
 }
 
 void wait_for_user() {
-    printf("Press ENTER key to Continue");  
+    printf("Press the ENTER key to continue...");  
     getchar();
 }
 
 void lose_screen() {
     printf("You have passed out.\n");
-    printf("The arbiter takes advantage of your unconscious self and slits your throat. Hey, at least it was painless.");
+    printf("The arbiter takes advantage of your unconscious self and slits your throat. Hey, at least it was painless.\n");
+    wait_for_user();
     exit(0);
 }
 
@@ -111,6 +112,7 @@ int main() {
             }
         }
     }
-    printf("The arbiter is shocked to witness you knocking down the ten expert martial artists. He now praises you as the \"Chosen One.\"");
+    printf("The arbiter is shocked to witness you knocking down the ten expert martial artists. He now praises you as the \"Chosen One.\"\n");
+    wait_for_user();
     return 0;
 }
