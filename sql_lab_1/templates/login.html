@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login - NAUthenticate</title>
+        <style type="text/css">
+            .username, .password {
+            margin-bottom: 0.7em;
+            }
+            .username input, .password input {
+            width: 278px;
+            }
+            form {
+            margin: 0;
+            }
+            .input-prepend .add-on {
+            height: 30px;
+            position: relative;
+            width: 30px;
+            }
+            .input-prepend i {
+            color: #282828;
+            font-size: 24px;
+            height: 24px;
+            left: 50%;
+            margin-left: -12px;
+            margin-top: -12px;
+            position: absolute;
+            top: 50%;
+            width: 24px;
+            }
+            input#username, input#password {
+            height: 40px;
+            }
+            .username {
+            margin-top: 13px;
+            }
+            .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid rgb(57, 93, 170);
+            background-color: aliceblue;
+            padding: 10px; }
+            .loginWrapper {
+            background: url(/static/loginAubie.png) no-repeat top left transparent;
+            padding: 12px 0 0 76px;
+            margin: 0 auto 30px auto;
+            width: 450px; }
+            .applicaitonIdentity {
+            color: #282828;
+            padding-top: 5px; }
+            .login {
+            display: inline-block;
+            border: 1px solid #bbb;
+            padding: 2em 3em;
+            border-radius: 0px 5px 5px;
+            }
+            .login ul {
+            padding: 0 0 2em;
+            }
+            .login ul li {
+            list-style-position: outside;
+            list-style-type: none;
+            background: none;
+            padding-left: 0;
+            }
+            .login-buttons {
+            margin-top: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center"><strong>NotAU Access</strong> is requesting that you be NAUthenticated.  If you trust this service, enter your Nauburn Username and Password below.</div>
+        <div class="loginWrapper">
+            <div class="login" id="login">
+                <form method="post" id="fm1">
+                    <section class="username">
+                        <div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa-lg fa-fw"></i></span>
+                                <input class="required form-control"
+                                    id="username"
+                                    size="25"
+                                    tabindex="1"
+                                    type="text"
+                                    accesskey="u"
+                                    autocomplete="off"
+                                    placeholder="Username" name="username" value="" />
+                            </div>
+                        </div>
+                    </section>
+                    <section class="password">
+                        <div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock fa-lg fa-fw"></i></span>
+                                <input class="required form-control"
+                                    type="password"
+                                    id="password"
+                                    size="25"
+                                    tabindex="2"
+                                    accesskey="p"
+                                    autocomplete="off"
+                                    placeholder="Password" name="password" value="" />
+                            </div>
+                        </div>
+                    </section>
+                    <section class="check">
+                    </section>
+                    <section class="btn-row">
+                        <input type="hidden" name="execution" value="2fc8d481-e9c0-41b5-94c1-5c671b3e41ac_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuYm13M1pFdERkMWRPU21aUGJIWjZNVk5zTDJwNmNWZ3lSbXgzZEZremVYTjVlRlZMWmxSVmFqZHlMM0J4THpCR2EyNWxTV3hMY2pWaVozcGpOMkZ2TjFVMlNUVktXWE5KVUhoalZXSkdhelp4UXpaalJWcHhOblUzZEZwMldWUTFXbWxUTUdzeFRERkVTWEkzVG01QmRETnZla051Umxkd01VNUZTMHd6UVc1dE5FVjNVa0pXTUROYWIwaERjMEZWY1dvMWJqSllSemRVVUVoUVowSjNla3BwU3preWJqZE5SRXB3YjJGTFZXMVhXbVkzV1cwMllYVTRSbFZKWVRoUFZFNWtaMlkzV1RKM2RtMDJNRVZYT1d4bEszWmtWMmwzYWpWeVJHYzVXVnBzYjFvM05teHpNM2hKTVRoVlltdG9ZMUpYUlcxTlR6RmtaVzgxUkU0NFRsRk5aRVJKUjNoMk5VODVVV0ZJYlhkTU5YbHpiVFpMVERWYWFrcDVNR2h2U0RGbFRXNUpPWEIwWW5sUGF6WllSakYwTUVGWVMyMHhZMWRrWkhRd04zbHdhMHRFVVdOdk5FdzNkbEpYTURGaVFsUlVZWE5uWVd0NU9UbERVRU50Uml0Uk0yaFJWelp2ZW5NeE4wVnJhbkoyWjFrclNUTmxhV295VDBOTFZFWkxkWHBWVFRaa1Rua3JUell5VWpCaEwwMU5kMDlTZUVkRWVXWkdSak5NV1VvNWFVdExiVFJPTXpKWmNtZHFOR3BYVW1aQlkzQk1SVWh1Y0ZrcmNXRXlWVGxZY0RGaGVXTXpTV3QxWlhocFlVNXNhV1ZsWkVKb1lWaFpNRzVXWkRoWVJIRlZTREp1UVhJMFNGcHFSV2c0VEhCeWRYZ3ZaVE41WW1SWWRtVXlhVmh3Y0VsTmNHSm5kV3c1UlU5TlJXMWpNV2Q0ZFcwclVsTlhRbWw2T0RGTVR6WkxjVE5qTlc1VGVXWkpjbWxuWWt0cE1XZE9XakpLYzJsYWFYRXJibE4yUjI1a2QzUk1abG9yUm5Ca00yRndOSFJ3VDNsb2FXRlBOSFEwTmt4c1UyTXdlbVJDYTJSRVJEVldSbGt4VjJaVGRXcDBXbHBJWldKUFNuSlZiRGswUnpKRlZtdGxiVnBvZFZWVVJtUlBWVEppVTB4eU1FZElZV0kyVkdsRlNrWnZaVmMzVm1aa1NYVlpXbkI0UldGSGJWTm9iVll6WjNoclZIQmxiRUpsUWxSU1ZGTlNWMFZXSzNOSGNsZE9aV0ZqTjNGcmJsTkpaa3BDVVhaQmFrWXZSelFyZVhsWlFsZHdjbkpOV1VSbU9IaFpVV2xzVDI4ME5WSlJRVmREY21OMWFsaFVZV054ZDJwT2RIZ3haV013Tm10TFVtdERhVlY0Vm5oR2FqRXhRelZ4TWxoSE0yTlRNR3hrY1cxSWRETmpTelkyUlZaVWQySndWVkk0ZG1WWmJYRmtVeXRQU1ROVFpYVkpia3BQYlV0d1YwMVZOMVl6U2poc1ppdHlielJNY1hOdFFtODBaMncyWW1oaFVETnZSMVprV1VoaGNqUlhSMHQ2UjFaeFNTOUhZMFJsVEhCcGRHRldRMlkwU1VWUE5qaEpUbFZTTkd4dE9DODJTMk4yYVRsT2JuVkVhMmRQUkdWWFEwRkRUMWhNVmxaNFZIcHNiSFZOTTBsYU4yZHJNWGcxWmsxWmMxZzNSMWR3Y21GSVdrNVFWMEpMYURWaFJGaFdlV1ZzUm5ocVJYUTJlR3RqZHpOQk5FcEhTRWRLWVc0NVdHMTJOM2RQV1ZFMGRVUnFhQzl6VkRkTU1IUnFVelEwVEdWNWJrWXpkbTlQVmtoalprMTNOalJ2WWs5NWRsaEtha1paWVVvemFFaHZjRVExTldoRFR6UjNVMVY0UjBVd1IyNU1jaXN4WlhGcU9WVjBlRXAwTlRsNFMyRmlVVmxMZVRBdlltWkZlVE52V213M1V5OHZhbkJhYkN0SlFsWnZSMFV3WWtZdlpVRm5PVGh1YVVNNVRsWmlRbWxSV1VFelVFTktPWE5FUjBkalRrVXdZa1J1VDJWNVNUSk5Na3BRVFZacVVGRllRVlIzTjJwUUswODJTVlZHTHpGTk1tUnZiRlZuV2xGVlJFWjRiRVJTWjA1SFVXZ3phR3h3YXpGVFZrMHZjV1J2YjBablUwSjJVV3RFUjB0YVZrUXhRVlpOY21oUVdUVTRWalJIWmtkQ1MyTmtZemsxYlhsVllYVm1RbmxZWkVsblZEZHNSbWhtWld4blRFSTVlVEJXU0VKNlZ6ZE5hMUYyVkRod1ozSjNSR1V2YWt0U01uSjJhWFEyZUd0NmNGbHVXQ3RHUlhCU2FrUnVOeXNyTWxseGRFa3dNakZ0TkRKc1dFWTBPV1pXVjBnMEswNUZaMlZxYUhaRVdYRnZaV1JpVHpoSVdtSTNjRkE0UVV0TVR6Tk9hWFZZWjNsNWRtNHJlR3RtY1doVk1FdFpSbFp5YzJNek9EQkllWEppY1V4NVQxVkxZVGM1UjFSbVltZFNMMDFoZUhkamNVTm5iQzg0T0ZsaWRuaE9XWE5CVWtSSWMwazVaa1V4U2tOTlR6aHZWV1ZrVmtkTVJUTkpaM0ZNVldORE4wTm5jV05QVkhwNlUyMDJVMk5YZEZKMFRIbEVRMHB2Y1N0alprc3ZRbkI1WmtobmRHSTFSVzEwY21OQlNrTktRekpISzJkVk1UaFlhVkZvU0dsUk4wRnNWVkZHYVVSUk9GWkNMemRYZFhKVWJsbG5NM2hsYXpOUmFtSllPRlZVVW5SV1NEVTFhV0ZZZUdRcloyb3JlRUYzTW5oUlpYaElPRFJZZUdGaVZXaE9Rakp4ZW5oWEsweHFhSFp2WlN0amEyUjViVXBQZUhONllrOTRkMFIwYzNaT00yZFdXRWxNUVdWbVFVa3ZVMUpGWTJGck9GaHliRkE1WVROVE0yZDVUekZvZVhKWVdqTXJTMVZRYVZrelozUXZVVzFqWTJWT05WWkVkak4zYmpOck1UQmtNRXBCWWpOdWNXdEJTRlpzU1hsWE4yWndPV295TVdWTEswRm9hRWhhVUhwdVMzZHZNak00TnpKWU1IZDZNVnB0Wm5KdFFXZEVVbmxsSzNGT2VtWjBOR1pDWlZwS05UZGthRkpxU1dWUGN6SXpiRU5xVjBZMFoyOTNRVWg0WWtKV1YxUjZRMnByTVU5TFYzSlRjRTVwWlRCelNsUldWbE5LZVZsdVRFNXdObUZWYVhKcVNqTjRXa0paVms1RFUweFRXbEZCU0VoUGJHWktkMDlvY2xoNlJqaHRjSEpzZVc0MGNFUmhOMlY0U1RZdmQybFVSRzlwWVc0d1prOUlUazkyZDNrd01ISlNkRkkzWW1KaE5XaDNUemxLZW5BM2MyeFllWEZSYVZjd2RFZHNZMGhoVFRSV1JsSkhLelJFVkdGQlMwMWlVV2Q2YlU1ekszVjRTR3BZWm5vck4yeEVaMlZ1V1hWaFRIVmxWbEpKZUVOMFVqbG9jWGgxWTA0eEsxZ3ZNREJsZFV0MmJXd3lVWFZSYWxWMVFWaHROV00zUVN0c2FFRlVWSFZCUjA5bWFUaFJWMXBYWlhWM1VtVTFUUzlhZWxwTGNXcERRbVozZGxWbk5FeFpaRWRIVjFWQlVqUnROMFZrWW05YVVXbHZaV2t4VjNSVU5sY3lVVUZGVWpoaU9ITTVhMjFPVUVObFJuSTNXV0pGWmtOWVlVc3ZPR3MyWVhSYVFuaGpXRkVyT1VFNWRFRlVhamM0VkRnNFYwRk5NWFpYWkRBclZscGFWazFOUkRkSmMwdExkblpxYUU1WlNrMWpUMDExYjJ0blVtUjVOVzVxVm5NM2IwNHpjM2xKWTFjNWIzZG9ibWt5Y2padldtOTNOVXRLT0RjdmFrNUNWVzg0UVhWNlYyOURUbmQyYVZOMEsxUTVTQzlvVUUwME1FVmFiMVFyVW1FemJXNXpOVFZxUXl0Vk1rODNaV3RSVUVwVVdqWmlORkZVYms5Q0sybGlhV0ppZVU1dllrdEJVbWRPV2psNFMzWmxSSEZwUzFaSVJXUTJabEIyVldkRFMyc3lLMVEyWWpaTFdtdEtPV3RFTjJ0a2RHaHhhRU40WTI1UFdtc3hRbEJtZFZCU05VdHNRbGd3TkRaSE9VZzJaM2xQY2pCTlIxVnpOWE5FWm1kSFFXTlBOVU5XUm1kcVQyNXdaR05EVUc5TlVUQjJOVXBrVG04dlFXSXJkMEZhY1RaSk1XdG9iSEZvZG5WUVkwVkxkbGRWSzBOTFdIWmljbTl0T0hwUlpIVk5LMDUwVWxkUFFYbGpORkYxWlVVMU5ETndVbTFQUTFGVVFURXZhMWhTZUZBeVVrcG1kM05LU1hWMWJrdExORU5ZTlVkbVFYa3dMelp6VlVsSllraEtaMDkyZEVzMlVWWjBTRmxDT1c0NVNUQmpWMVZCZW10UGMwNHZMMnBEZUZGUEwyaGlUWEU1VURJNGVWTjZZMFF3TnpoS1RFVXdWbFpGWmprMU0xQkJPRlEwV2tRMlFYcHVMME56Tml0a1EyRlpZbXBoTkRSeldXa3hiakZWYWl0MFMwUndObVkxZUZwUlFVeFNLM1pMZVROTmNIaGtUSEZzYUROQ04wSkpWamR6YVVKM1FqRklPWGN5Wnk4NVdXTlFTSEpaUlhSRU9YWlBNVFIzUlZVeGJUZHJOR05SZFRrM1dHMU5RblJuYmxaRldtOVpNRVpNTjJ4Q1NHRXpNRFZtZHlzM1RHSmlhelZoVVVJdlZHWlVTRGxOUmpsc05tVjFUbU52VTJ0blVYTnBSM3A2TTJGUmQxYzRPWFJyV21STVdqQTNSbTVZSzNCRVYyUmlUMDUwVXpoSUwwaE1OMnRCUmt4SGVDOXZiWFpCZUUxWlNYbFNTa3RLZEhNMWR6UmxOVGhFU1hGSWJISlNiMlJ4V1cxMFRGWk9WbGsuWVI0eUNvY0hFckd2M3I0QVdxRlNEM29mRGRRUGFTbXVxSXllYUNWNkNHLUV3TjBLZXJfa1pOQVdyRnpNSnFOcVJZbHNLWEJRam9PbDZ0V09DSHZzcEE="/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><input class="btn btn-submit"
+                            name="submit"
+                            accesskey="l"
+                            value="LOGIN"
+                            tabindex="6"
+                            type="submit"/>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
