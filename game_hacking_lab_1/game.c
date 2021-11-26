@@ -68,7 +68,7 @@ void introduce() {
         "The goal of this game is to take turns slapping each other in the face. The last side standing wins!\n"
         "\n"
         "Your scenario:\n"
-        "You shamelessly bragged about your 10 gold medals from your martial art competitions, and the arbiter now hates you. The arbiter decided you to invite you to his Impossible Brawl martial competition to “prove” your prowess. Because of your ginormous ego, you couldn’t turn down the offer and signed up. The rules of the game only require that each contestant take turns—there was no talk on how many contestants could be on each side. However, the arbiter conveniently neglected to tell you a small detail: you would be facing against 10 other martial artists. You fall unconcious if your health reaches 0, and the same applies for them.\n\n"
+        "You shamelessly bragged about your 10 gold medals from your martial art competitions, and the arbiter now hates you. The arbiter decided you to invite you to his Impossible Brawl martial competition to \"prove\" your prowess. Because of your ginormous ego, you couldn't turn down the offer and signed up. The rules of the game only require that each contestant take turns; there was no talk on how many contestants could be on each side. However, the arbiter conveniently neglected to tell you a small detail: you would be facing against 10 other martial artists. You fall unconcious if your health reaches 0, and the same applies for them.\n\n"
     );
 }
 
@@ -111,6 +111,6 @@ int main() {
             }
         }
     }
-    printf("The arbiter is shocked to witness you knocking down the ten expert martial artists. He now praises you as the “Chosen One.”");
+    printf("The arbiter is shocked to witness you knocking down the ten expert martial artists. He now praises you as the \"Chosen One.\"");
     return 0;
 }
